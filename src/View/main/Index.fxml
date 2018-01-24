@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="500.0" styleClass="anchors" stylesheets="@index.css" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.IndexController">
+   <children>
+      <StackPane prefHeight="150.0" prefWidth="500.0" styleClass="anchor" stylesheets="@index.css">
+         <children>
+            <HBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="77.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/Student.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="49.0" prefWidth="409.0" text="Student Management System" textFill="#f8f8f8">
+                     <font>
+                        <Font name="Bookman Old Style" size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+               <StackPane.margin>
+                  <Insets />
+               </StackPane.margin>
+            </HBox>
+         </children>
+      </StackPane>
+      <VBox alignment="TOP_CENTER" layoutX="82.0" layoutY="109.0" prefHeight="270.0" prefWidth="325.0" styleClass="vbox" stylesheets="@index.css">
+         <children>
+            <TextField fx:id="tfusername" promptText="Username" styleClass="text" stylesheets="@index.css">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="15.0" right="15.0" top="40.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="tfPass" promptText="Password" styleClass="text" stylesheets="@index.css">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="15.0" right="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </TextField>
+            <JFXButton fx:id="btnLogin" buttonType="RAISED" onAction="#login" prefHeight="36.0" prefWidth="289.0" ripplerFill="#5dae54" styleClass="loginBtn" stylesheets="@index.css" text="Login" textFill="#fffefb">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+      <Hyperlink fx:id="linkForgotPass" layoutX="279.0" layoutY="405.0" onAction="#newPass" prefHeight="23.0" prefWidth="120.0" text="Forgot Password" />
+      <Hyperlink fx:id="linkCreateUser" layoutX="115.0" layoutY="405.0" onAction="#createUser" prefHeight="23.0" prefWidth="102.0" text="Create User" />
+   </children>
+</AnchorPane>

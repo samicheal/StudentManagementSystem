@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToolbar?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="1024.0" style="-fx-background-color: white;">
+         <children>
+            <JFXToolbar prefHeight="50.0" prefWidth="1024.0" styleClass="toolbar" stylesheets="@dashboard.css">
+               <center>
+                  <Text fill="#f2eded" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Management System" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+               </center>
+               <right>
+                  <HBox prefHeight="40.0" prefWidth="26.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label prefHeight="54.0" prefWidth="26.0">
+                           <graphic>
+                              <MaterialDesignIconView fill="#fcf8f8" glyphName="DOTS_VERTICAL" size="30" wrappingWidth="24.0" />
+                           </graphic>
+                        </Label>
+                     </children>
+                  </HBox>
+               </right>
+            </JFXToolbar>
+         </children>
+      </VBox>
+      <HBox prefHeight="560.0" prefWidth="1024.0">
+         <StackPane.margin>
+            <Insets top="50.0" />
+         </StackPane.margin>
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="side-bar" stylesheets="@dashboard.css">
+               <children>
+                  <GridPane prefHeight="220.0" prefWidth="200.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <JFXButton graphicTextGap="20.0" prefHeight="43.0" prefWidth="200.0" styleClass="side-buttons" stylesheets="@dashboard.css" text="Home">
+                           <graphic>
+                              <MaterialDesignIconView fill="#110f0f" glyphName="HOME" size="20.0" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton graphicTextGap="20.0" prefHeight="43.0" prefWidth="200.0" styleClass="side-buttons" stylesheets="@dashboard.css" text="Add Students" GridPane.rowIndex="1">
+                           <graphic>
+                              <MaterialDesignIconView glyphName="ACCOUNT_PLUS" size="20.0" text="" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton graphicTextGap="20.0" prefHeight="43.0" prefWidth="200.0" styleClass="side-buttons" stylesheets="@dashboard.css" text="View Students" GridPane.rowIndex="2">
+                           <graphic>
+                              <MaterialDesignIconView glyphName="ACCOUNT_MULTIPLE" size="20.0" text="" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton graphicTextGap="20.0" prefHeight="43.0" prefWidth="200.0" styleClass="side-buttons" stylesheets="@dashboard.css" text="Log out" GridPane.rowIndex="3">
+                           <graphic>
+                              <MaterialDesignIconView glyphName="LOGOUT" size="20.0" text="" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton graphicTextGap="20.0" prefHeight="43.0" prefWidth="200.0" styleClass="side-buttons" stylesheets="@dashboard.css" text="Exit" GridPane.rowIndex="4">
+                           <graphic>
+                              <MaterialDesignIconView glyphName="WINDOW_CLOSE" size="20.0" text="" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="824.0" />
+         </children>
+      </HBox>
+   </children>
+</StackPane>

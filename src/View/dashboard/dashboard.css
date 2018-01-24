@@ -1,0 +1,20 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.toolbar{
+    -fx-pref-height:50px;
+    -fx-background-color: #3F51B5;
+}
+
+.side-bar{
+    -fx-background-color: #ffffff;
+    -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.8), 7.0, 0.0, 0.0,0.0);
+}
+
+.side-buttons{
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-alignment: CENTER_LEFT;
+}
+

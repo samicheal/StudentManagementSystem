@@ -1,0 +1,30 @@
+.anchor{
+    -fx-background-color:#3F51B5;
+}
+
+.vbox{
+    -fx-background-color:#dddee4; 
+    -fx-background-radius: 20px;
+    -fx-border-width: 1px;
+    -fx-border-radius: 20px;
+    -fx-border-color:#a6a6ac ;
+    -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.3), 7.0, 0.0, 0.0,0.0);
+}
+
+.text{
+    -fx-text-fill:#c8534b;
+    -fx-background-color:#c9caeb;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color:cadetblue;
+}
+
+.loginBtn{
+    -fx-background-color: orange;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+}
+
+.anchors{
+    -fx-background-image: url('file:C:/Users/USER/Documents/NetBeansProjects/Finacle/src/images/Student.png');
+}
+

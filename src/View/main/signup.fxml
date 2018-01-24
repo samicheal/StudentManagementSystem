@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="458.0" prefWidth="542.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SignUpController">
+   <children>
+      <HBox prefHeight="125.0" prefWidth="558.0" styleClass="anchor" stylesheets="@index.css">
+         <children>
+            <ImageView fitHeight="36.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/register-now-button.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="10.0" top="45.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label alignment="CENTER" prefHeight="87.0" prefWidth="500.0" text="Student User Page" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="32.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <VBox layoutX="30.0" layoutY="162.0" prefHeight="251.0" prefWidth="499.0">
+         <children>
+            <JFXTextField fx:id="tfUsername" labelFloat="true" promptText="Username" unFocusColor="BLUE">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXPasswordField fx:id="tfPass" labelFloat="true" promptText="Password" unFocusColor="BLUE">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </JFXPasswordField>
+            <JFXPasswordField fx:id="tfConfirmPass" labelFloat="true" layoutX="10.0" layoutY="55.0" promptText="Confirm Password" unFocusColor="BLUE">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </JFXPasswordField>
+            <JFXComboBox fx:id="comboSecurity" labelFloat="true" prefHeight="25.0" prefWidth="603.0" promptText="Security Question" unFocusColor="BLUE">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </JFXComboBox>
+            <JFXTextField fx:id="tfAnswer" labelFloat="true" layoutX="10.0" layoutY="10.0" promptText="Answer" unFocusColor="BLUE">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+         </children>
+      </VBox>
+    <Button fx:id="btnCreateUser" alignment="CENTER" layoutX="200.0" layoutY="398.0" mnemonicParsing="false" onAction="#register" prefHeight="30.0" prefWidth="179.0" styleClass="loginBtn" stylesheets="@index.css" text="Create User" textFill="#f5f5f5">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
